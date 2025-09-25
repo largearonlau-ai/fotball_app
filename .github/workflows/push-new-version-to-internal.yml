@@ -16,7 +16,7 @@ jobs:
         run: |
           mkdir -p build_output
           gh release download 2.0.0 \
-            --pattern "*.aab" \
+            --pattern "Crazy Football Tricks_2.aab" \
             --dir build_output
 
       - name: Setup Ruby
@@ -33,3 +33,4 @@ jobs:
         run: |
           export GOOGLE_PLAY_JSON_KEY="$(echo "$GOOGLE_PLAY_JSON_KEY")"
           fastlane android upload_to_internal
+          
