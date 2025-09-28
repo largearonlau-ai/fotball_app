@@ -16,7 +16,7 @@ jobs:
         run: |
           mkdir -p build_output
           gh release download 2.0.0 \
-            --pattern "Crazy.Football.Tricks_2.aab" \
+            --pattern "Crazy.Football.Tricks_3.aab" \
             --dir build_output
 
       - name: Setup Ruby
